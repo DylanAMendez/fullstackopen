@@ -15,7 +15,7 @@ const Note = ({ note }) =>
       <p> population: {note.population} </p>
       <h4>languages</h4>
       <>
-        <li>
+        <main>
           {
             languages.map((language, index) => (
               <p key={index}>
@@ -23,7 +23,7 @@ const Note = ({ note }) =>
               </p>
             ))
           }
-        </li>
+        </main>
       </>
 
       <img src={note.flags.svg} alt={note.name.common} width={200} />
