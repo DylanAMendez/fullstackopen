@@ -1,10 +1,32 @@
 {
-  "notes": [
+  "agenda": [
     {
-      "content": "a new note...",
+      "content": "Arthur Hellas",
+      "number": "040-123456",
       "date": "2024-01-03T17:03:54.238Z",
       "important": false,
       "id": 1
+    },
+    {
+      "content": "asd",
+      "number": "123",
+      "date": "2024-01-03T20:21:41.616Z",
+      "important": false,
+      "id": 2
+    },
+    {
+      "content": "ddddd",
+      "number": "123",
+      "date": "2024-01-03T20:22:10.231Z",
+      "important": true,
+      "id": 3
+    },
+    {
+      "content": "dsa",
+      "number": "111",
+      "date": "2024-01-03T20:22:26.545Z",
+      "important": true,
+      "id": 4
     }
   ]
 }
