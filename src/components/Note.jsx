@@ -1,35 +1,17 @@
 
 
-const Note = ({ note }) =>
+
+const Note = ({ note, toggleImportance }) =>
 {
-
-  console.log(note.languages);
-
-  const languages = Object.values(note.languages)
-
+  const label = note.important
+    ? 'make not important' : 'make important'
 
   return (
-    <>
-      <h3> {note.name.common} </h3>
-      <p> capital: {note.capital} </p>
-      <p> population: {note.population} </p>
-      <h4>languages</h4>
-      <>
-        <main>
-          {
-            languages.map((language, index) => (
-              <p key={index}>
-                <>{language}</>
-              </p>
-            ))
-          }
-        </main>
-      </>
-
-      <img src={note.flags.svg} alt={note.name.common} width={200} />
-
-    </>
+    <li>
+      {note.content}
+      <button onClick={toggleImportance}>{label}</button>
+    </li>
   )
-};
+}
 
-export default Note;
+export default Note
